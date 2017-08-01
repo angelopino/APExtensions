@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "39B1CF541F2F3022007D5A1D"
-               BuildableName = "APExtensionsiOS.framework"
-               BlueprintName = "APExtensionsiOS"
-               ReferencedContainer = "container:APExtensions.xcodeproj">
+               BuildableName = "APJExtensionsiOS.framework"
+               BlueprintName = "APJExtensionsiOS"
+               ReferencedContainer = "container:APJExtensions.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "39B1CF5C1F2F3022007D5A1D"
-               BuildableName = "APExtensionsiOSTests.xctest"
-               BlueprintName = "APExtensionsiOSTests"
-               ReferencedContainer = "container:APExtensions.xcodeproj">
+               BuildableName = "APJExtensionsiOSTests.xctest"
+               BlueprintName = "APJExtensionsiOSTests"
+               ReferencedContainer = "container:APJExtensions.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39B1CF541F2F3022007D5A1D"
-            BuildableName = "APExtensionsiOS.framework"
-            BlueprintName = "APExtensionsiOS"
-            ReferencedContainer = "container:APExtensions.xcodeproj">
+            BuildableName = "APJExtensionsiOS.framework"
+            BlueprintName = "APJExtensionsiOS"
+            ReferencedContainer = "container:APJExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39B1CF541F2F3022007D5A1D"
-            BuildableName = "APExtensionsiOS.framework"
-            BlueprintName = "APExtensionsiOS"
-            ReferencedContainer = "container:APExtensions.xcodeproj">
+            BuildableName = "APJExtensionsiOS.framework"
+            BlueprintName = "APJExtensionsiOS"
+            ReferencedContainer = "container:APJExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "39B1CF541F2F3022007D5A1D"
-            BuildableName = "APExtensionsiOS.framework"
-            BlueprintName = "APExtensionsiOS"
-            ReferencedContainer = "container:APExtensions.xcodeproj">
+            BuildableName = "APJExtensionsiOS.framework"
+            BlueprintName = "APJExtensionsiOS"
+            ReferencedContainer = "container:APJExtensions.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

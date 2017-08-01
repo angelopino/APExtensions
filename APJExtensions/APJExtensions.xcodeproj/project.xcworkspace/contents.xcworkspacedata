@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:APExtensions.xcodeproj">
+      location = "self:/Users/angelo.pino/Documents/AP/APExtensions/APExtensions/APJExtensions.xcodeproj">
    </FileRef>
 </Workspace>

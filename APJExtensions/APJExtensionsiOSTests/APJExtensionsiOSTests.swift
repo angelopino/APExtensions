@@ -1,15 +1,15 @@
 //
-//  APExtensionsiOSTests.swift
-//  APExtensionsiOSTests
+//  APJExtensionsiOSTests.swift
+//  APJExtensionsiOSTests
 //
 //  Created by Pino, Angelo on 31/07/2017.
 //  Copyright © 2017 Pino, Angelo. All rights reserved.
 //
 
 import XCTest
-@testable import APExtensionsiOS
+@testable import APJExtensionsiOS
 
-class APExtensionsiOSTests: XCTestCase {
+class APJExtensionsiOSTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

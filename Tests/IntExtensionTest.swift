@@ -1,6 +1,6 @@
 //
 //  IntExtensionTest.swift
-//  APExtensions
+//  APJExtensions
 //
 //  Created by Pino, Angelo on 31/07/2017.
 //  Copyright © 2017 Pino, Angelo. All rights reserved.
