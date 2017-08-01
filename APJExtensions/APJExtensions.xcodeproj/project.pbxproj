@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39112CDA1F308898004BDB25 /* APJExtensions.podspec */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39112CDA1F308898004BDB25 /* APJExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APJExtensions.podspec; path = ../APJExtensions.podspec; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		39B1CF2C1F2F2F5A007D5A1D = {
 			isa = PBXGroup;
 			children = (
+				39112CDA1F308898004BDB25 /* APJExtensions.podspec */,
 				39B1CF781F2F3D2A007D5A1D /* Tests */,
 				39B1CF6F1F2F379D007D5A1D /* Source */,
 				39B1CF561F2F3022007D5A1D /* APJExtensionsiOS */,
@@ -209,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
