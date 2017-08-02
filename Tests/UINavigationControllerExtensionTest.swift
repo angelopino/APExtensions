@@ -31,15 +31,14 @@ class UINavigationControllerExtensionTest: XCTestCase {
     
     func testNilRootViewController() {
         navigationViewController.rootViewController = nil
-        let viewController = navigationViewController.rootViewController
-        XCTAssert(viewController == nil)
+        XCTAssertNil(navigationViewController.rootViewController)
     }
     
     func testPopToViewController() {
         let firstViewController = FirstViewController(),
-            secondViewController = SecondViewController(),
-            thirdViewController = ThirdViewController(),
-            fourthViewController = FourthViewController()
+        secondViewController = SecondViewController(),
+        thirdViewController = ThirdViewController(),
+        fourthViewController = FourthViewController()
         
         navigationViewController.rootViewController = firstViewController
         firstViewController.navigationController?.pushViewController(secondViewController, animated: false)
@@ -60,7 +59,29 @@ class UINavigationControllerExtensionTest: XCTestCase {
         
         let popController = secondViewController.navigationController?.popToViewController(viewControllerType: ThirdViewController.self, animated: false)
         
-        XCTAssert(popController == nil)
+        XCTAssertNil(popController)
+    }
+    
+    func testIndexOf() {
+        let firstViewController = FirstViewController(),
+        secondViewController = SecondViewController(),
+        thirdViewController = ThirdViewController()
+        
+        navigationViewController.rootViewController = firstViewController
+        firstViewController.navigationController?.pushViewController(secondViewController, animated: false)
+        secondViewController.navigationController?.pushViewController(thirdViewController, animated: false)
+        let index = navigationViewController.index(of: ThirdViewController.self)
+        XCTAssert(index == 2)
+    }
+    
+    func testNilIndexOf() {
+        let firstViewController = FirstViewController(),
+        secondViewController = SecondViewController()
+        
+        navigationViewController.rootViewController = firstViewController
+        firstViewController.navigationController?.pushViewController(secondViewController, animated: false)
+        let index = navigationViewController.index(of: ThirdViewController.self)
+        XCTAssertNil(index)
     }
     
 }

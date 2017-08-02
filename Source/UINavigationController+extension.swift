@@ -30,5 +30,9 @@ public extension UINavigationController {
         }
         return nil
     }
+    
+    func index(of type: UIViewController.Type)-> Int? {
+        return viewControllers.index(where: { type(of: $0) == type })
+    }
 }
 

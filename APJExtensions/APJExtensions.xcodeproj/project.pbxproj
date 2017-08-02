@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39112CDA1F308898004BDB25 /* APJExtensions.podspec */; };
+		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
+		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
+		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
+		394CCAA31F32291700F708B0 /* UIViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394CCAA21F32291700F708B0 /* UIViewExtensionTest.swift */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		39112CDA1F308898004BDB25 /* APJExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APJExtensions.podspec; path = ../APJExtensions.podspec; sourceTree = "<group>"; };
+		393217811F30D4B70015C8E4 /* NSObject+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+extension.swift"; path = "../Source/NSObject+extension.swift"; sourceTree = "<group>"; };
+		393217821F30D4B70015C8E4 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+extension.swift"; path = "../Source/UIView+extension.swift"; sourceTree = "<group>"; };
+		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
+		394CCAA21F32291700F708B0 /* UIViewExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTest.swift; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +111,8 @@
 		39B1CF6F1F2F379D007D5A1D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				393217811F30D4B70015C8E4 /* NSObject+extension.swift */,
+				393217821F30D4B70015C8E4 /* UIView+extension.swift */,
 				39B1CF741F2F37E1007D5A1D /* UINavigationController+extension.swift */,
 				39B1CF761F2F381D007D5A1D /* Int+extension.swift */,
 			);
@@ -114,6 +124,8 @@
 			children = (
 				39E99E971F30879300F90C8E /* UINavigationControllerExtensionTest.swift */,
 				39B1CF791F2F3DC9007D5A1D /* IntExtensionTest.swift */,
+				393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */,
+				394CCAA21F32291700F708B0 /* UIViewExtensionTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -231,6 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B1CF751F2F37E1007D5A1D /* UINavigationController+extension.swift in Sources */,
+				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
+				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
 				39B1CF771F2F381D007D5A1D /* Int+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				394CCAA31F32291700F708B0 /* UIViewExtensionTest.swift in Sources */,
 				39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */,
 				39B1CF7A1F2F3DC9007D5A1D /* IntExtensionTest.swift in Sources */,
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
+				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
