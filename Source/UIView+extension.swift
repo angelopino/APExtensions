@@ -17,7 +17,7 @@ public extension UIView {
     }
     
     public func loadViewFromNib(_ nibName: String? = nil) -> UIView? {
-        guard let nibObjects = Bundle.main.loadNibNamed(nibName ?? className, owner: self, options: nil) else { return nil }
+        guard let nibObjects = Bundle(for: type(of: self)).loadNibNamed(nibName ?? className, owner: self, options: nil) else { return nil }
         return nibObjects.first as? UIView
     }
 }

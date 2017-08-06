@@ -37,4 +37,18 @@ class UIViewExtensionTest: XCTestCase {
         XCTAssert(view.subviews.count == 0)
     }
     
+    func testLoadViewFromNib() {
+        let view = CustomViewTest()
+        let viewFromNib = view.loadViewFromNib()
+        
+        XCTAssert(viewFromNib != nil)
+    }
+    
+    func testLoadViewFromNibWithNibName() {
+        let view = CustomViewTest()
+        let viewFromNib = view.loadViewFromNib("CustomViewTest")
+        
+        XCTAssert(viewFromNib != nil)
+    }
+    
 }
