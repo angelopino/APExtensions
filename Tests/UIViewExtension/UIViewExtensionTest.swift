@@ -21,18 +21,34 @@ class UIViewExtensionTest: XCTestCase {
     }
     
     func testRemoveSubviews() {
-        let mainView = UIView(),
-            subviews = [UIView(), UIView(), UIView(), UIView()]
+        let view = UIView(),
+        view1 = UIView(),
+        view2 = UIView(),
+        view3 = UIView()
         
-        for view in subviews {
-            mainView.addSubview(view)
-        }
+        view.addSubview(view1)
+        view.addSubview(view2)
+        view.addSubview(view3)
         
-        XCTAssert(mainView.subviews.count == subviews.count)
+        XCTAssert(view.subviews.count > 0)
         
-        mainView.removeSubviews()
+        view.removeSubviews()
         
-        XCTAssert(mainView.subviews.count == 0)
+        XCTAssert(view.subviews.count == 0)
+    }
+    
+    func testLoadViewFromNib() {
+        let view = CustomViewTest()
+        let viewFromNib = view.loadViewFromNib()
+        
+        XCTAssert(viewFromNib != nil)
+    }
+    
+    func testLoadViewFromNibWithNibName() {
+        let view = CustomViewTest()
+        let viewFromNib = view.loadViewFromNib("CustomViewTest")
+        
+        XCTAssert(viewFromNib != nil)
     }
     
 }

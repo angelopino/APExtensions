@@ -10,6 +10,9 @@
 		39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39112CDA1F308898004BDB25 /* APJExtensions.podspec */; };
 		3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5951F3868F2008C7885 /* Array+extension.swift */; };
 		3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */; };
+		3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5A61F3B0CE4008C7885 /* CustomViewTest.swift */; };
+		3925E5AA1F3B0CE4008C7885 /* CustomViewTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3925E5A71F3B0CE4008C7885 /* CustomViewTest.xib */; };
+		3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5A81F3B0CE4008C7885 /* UIViewExtensionTest.swift */; };
 		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
 		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
@@ -36,6 +39,9 @@
 		39112CDA1F308898004BDB25 /* APJExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APJExtensions.podspec; path = ../APJExtensions.podspec; sourceTree = "<group>"; };
 		3925E5951F3868F2008C7885 /* Array+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+extension.swift"; path = "../Source/Array+extension.swift"; sourceTree = "<group>"; };
 		3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTest.swift; path = ../Tests/ArrayExtensionTest.swift; sourceTree = "<group>"; };
+		3925E5A61F3B0CE4008C7885 /* CustomViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewTest.swift; sourceTree = "<group>"; };
+		3925E5A71F3B0CE4008C7885 /* CustomViewTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomViewTest.xib; sourceTree = "<group>"; };
+		3925E5A81F3B0CE4008C7885 /* UIViewExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensionTest.swift; sourceTree = "<group>"; };
 		393217811F30D4B70015C8E4 /* NSObject+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+extension.swift"; path = "../Source/NSObject+extension.swift"; sourceTree = "<group>"; };
 		393217821F30D4B70015C8E4 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+extension.swift"; path = "../Source/UIView+extension.swift"; sourceTree = "<group>"; };
 		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 		3925E5991F39ABC6008C7885 /* UIViewExtension */ = {
 			isa = PBXGroup;
 			children = (
+				3925E5A61F3B0CE4008C7885 /* CustomViewTest.swift */,
+				3925E5A71F3B0CE4008C7885 /* CustomViewTest.xib */,
+				3925E5A81F3B0CE4008C7885 /* UIViewExtensionTest.swift */,
 			);
 			name = UIViewExtension;
 			path = ../Tests/UIViewExtension;
@@ -244,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3925E5AA1F3B0CE4008C7885 /* CustomViewTest.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +281,8 @@
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
+				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
+				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
