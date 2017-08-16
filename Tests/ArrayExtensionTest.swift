@@ -139,7 +139,7 @@ class ArrayExtensionTest: XCTestCase {
         XCTAssert(arr.count == 5)
     }
     
-    func testRemoveNvl() {
+    func testRemoveElement() {
         let string1 = "string1",
         string2 = "string2",
         string3 = "string3",
@@ -149,14 +149,34 @@ class ArrayExtensionTest: XCTestCase {
         arr = [string1, string2, string3, string4]
         
         let stringNil: String? = nil
-        arr.removeNvl(stringNil)
+        arr.remove(stringNil)
         XCTAssert(arr.count == 4)
         
-        arr.removeNvl(string5)
+        arr.remove(string5)
         XCTAssert(arr.count == 4)
         
-        arr.removeNvl(string4)
+        arr.remove(string4)
         XCTAssert(arr.count == 3)
+    }
+    
+    func testRemoveElements() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3, string4]
+        
+        let stringNil: [String]? = nil
+        arr.remove(stringNil)
+        XCTAssert(arr.count == 4)
+        
+        arr.remove([string5])
+        XCTAssert(arr.count == 4)
+        
+        arr.remove([string3, string4])
+        XCTAssert(arr.count == 2)
     }
     
     func testContainsNvl() {

@@ -64,9 +64,16 @@ public extension Array where Element : Equatable {
         }
     }
     
-    public mutating func removeNvl(_ element: Element?) {
+    public mutating func remove(_ element: Element?) {
         guard let el = element, let index = index(of: el) else { return }
         remove(at: index)
+    }
+    
+    public mutating func remove(_ elements: [Element]?) {
+        guard let elements = elements else { return }
+        for element in elements {
+            remove(element)
+        }
     }
     
     public func containsNvl(_ element: Element?) -> Bool {
