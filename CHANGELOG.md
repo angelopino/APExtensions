@@ -2,11 +2,18 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.7` Releases - [0.0.7](#007)
 - `0.0.5` Releases - [0.0.5](#005)
 - `0.0.4` Releases - [0.0.4](#004)
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.7]
+Released on 2017-08-16.
+
+#### Added
+- `Array` extension.
 
 ## [0.0.5]
 Released on 2017-08-02.
