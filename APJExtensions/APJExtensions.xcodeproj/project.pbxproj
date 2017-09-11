@@ -18,6 +18,8 @@
 		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
 		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
+		39363B7B1F67265D00C1960E /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 39363B791F67265D00C1960E /* CHANGELOG.md */; };
+		39363B7C1F67265D00C1960E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 39363B7A1F67265D00C1960E /* README.md */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +51,8 @@
 		393217811F30D4B70015C8E4 /* NSObject+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+extension.swift"; path = "../Source/NSObject+extension.swift"; sourceTree = "<group>"; };
 		393217821F30D4B70015C8E4 /* UIView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+extension.swift"; path = "../Source/UIView+extension.swift"; sourceTree = "<group>"; };
 		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
+		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
+		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +98,8 @@
 		39B1CF2C1F2F2F5A007D5A1D = {
 			isa = PBXGroup;
 			children = (
+				39363B791F67265D00C1960E /* CHANGELOG.md */,
+				39363B7A1F67265D00C1960E /* README.md */,
 				39112CDA1F308898004BDB25 /* APJExtensions.podspec */,
 				39B1CF781F2F3D2A007D5A1D /* Tests */,
 				39B1CF6F1F2F379D007D5A1D /* Source */,
@@ -275,6 +281,8 @@
 				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
+				39363B7B1F67265D00C1960E /* CHANGELOG.md in Sources */,
+				39363B7C1F67265D00C1960E /* README.md in Sources */,
 				39B1CF771F2F381D007D5A1D /* Int+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
