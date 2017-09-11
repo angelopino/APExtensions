@@ -51,4 +51,28 @@ class UIViewExtensionTest: XCTestCase {
         XCTAssert(viewFromNib != nil)
     }
     
+    func testBindFrameToSuperviewBounds() {
+        var viewBind = UIView()
+        let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        viewForCheck.addSubview(viewBind)
+        viewBind.bindFrameToSuperviewBounds()
+        viewBind.setNeedsLayout()
+        viewBind.layoutIfNeeded()
+        
+        XCTAssertEqual([viewForCheck.frame.height, viewForCheck.frame.width], [viewBind.frame.height, viewBind.frame.width])
+        
+        viewBind.removeFromSuperview()
+        viewBind = UIView()
+        let margin: CGFloat = 10,
+            marginForCheck = margin * 2
+        viewForCheck.addSubview(viewBind)
+        viewBind.bindFrameToSuperviewBounds(marginLeft: margin, marginRight: margin, marginTop: margin, marginBottom: margin)
+        viewBind.setNeedsLayout()
+        viewBind.layoutIfNeeded()
+        
+        XCTAssertEqual([viewForCheck.frame.height - marginForCheck, viewForCheck.frame.width - marginForCheck], [viewBind.frame.height, viewBind.frame.width])
+        
+    }
+    
 }

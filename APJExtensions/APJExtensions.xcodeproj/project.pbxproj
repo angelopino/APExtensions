@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390071A21F44A6F600993647 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390071A11F44A6F600993647 /* Date+extension.swift */; };
+		390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390071A31F44A7F000993647 /* DateExtensionTest.swift */; };
 		39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39112CDA1F308898004BDB25 /* APJExtensions.podspec */; };
 		3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5951F3868F2008C7885 /* Array+extension.swift */; };
 		3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390071A11F44A6F600993647 /* Date+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+extension.swift"; path = "../Source/Date+extension.swift"; sourceTree = "<group>"; };
+		390071A31F44A7F000993647 /* DateExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionTest.swift; path = ../Tests/DateExtensionTest.swift; sourceTree = "<group>"; };
 		39112CDA1F308898004BDB25 /* APJExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APJExtensions.podspec; path = ../APJExtensions.podspec; sourceTree = "<group>"; };
 		3925E5951F3868F2008C7885 /* Array+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+extension.swift"; path = "../Source/Array+extension.swift"; sourceTree = "<group>"; };
 		3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTest.swift; path = ../Tests/ArrayExtensionTest.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 				39B1CF741F2F37E1007D5A1D /* UINavigationController+extension.swift */,
 				39B1CF761F2F381D007D5A1D /* Int+extension.swift */,
 				3925E5951F3868F2008C7885 /* Array+extension.swift */,
+				390071A11F44A6F600993647 /* Date+extension.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				39B1CF791F2F3DC9007D5A1D /* IntExtensionTest.swift */,
 				393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */,
 				3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */,
+				390071A31F44A7F000993647 /* DateExtensionTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B1CF751F2F37E1007D5A1D /* UINavigationController+extension.swift in Sources */,
+				390071A21F44A6F600993647 /* Date+extension.swift in Sources */,
 				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
@@ -281,6 +288,7 @@
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
+				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
 			);

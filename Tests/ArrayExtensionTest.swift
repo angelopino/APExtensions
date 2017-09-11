@@ -179,6 +179,24 @@ class ArrayExtensionTest: XCTestCase {
         XCTAssert(arr.count == 2)
     }
     
+    func testRemoveWithPredicate() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3, string5]
+        
+        XCTAssertTrue(arr.contains(string2))
+        arr.remove { $0 == string2 }
+        XCTAssertFalse(arr.contains(string2))
+        
+        XCTAssert(arr.count == 3)
+        arr.remove { $0 == string4 }
+        XCTAssert(arr.count == 3)
+    }
+    
     func testContainsNvl() {
         let string1 = "string1",
         string2 = "string2",

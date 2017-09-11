@@ -76,6 +76,15 @@ public extension Array where Element : Equatable {
         }
     }
     
+    public mutating func remove(where predicate: (Element) throws -> Bool) rethrows {
+        guard count > 0 else { return }
+        for element in self {
+            if try predicate(element) {
+                remove(element)
+            }
+        }
+    }
+    
     public func containsNvl(_ element: Element?) -> Bool {
         guard let element = element else { return false }
         return self.contains(element)
