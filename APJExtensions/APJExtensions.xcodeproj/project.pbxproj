@@ -24,6 +24,13 @@
 		39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8012002A01A00FDD262 /* OneViewController.swift */; };
 		39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8032002A03300FDD262 /* TwoViewController.swift */; };
 		39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8052002A08B00FDD262 /* OneNavigationViewController.swift */; };
+		39A7C8082002B77F00FDD262 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8072002B77F00FDD262 /* UITableView+extension.swift */; };
+		39A7C8092002B77F00FDD262 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8072002B77F00FDD262 /* UITableView+extension.swift */; };
+		39A7C80D2002B9F000FDD262 /* UITableViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C80C2002B9F000FDD262 /* UITableViewExtensionTest.swift */; };
+		39A7C8102002BB8000FDD262 /* OneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C80E2002BB8000FDD262 /* OneTableViewCell.swift */; };
+		39A7C8112002BB8000FDD262 /* OneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C80F2002BB8000FDD262 /* OneTableViewCell.xib */; };
+		39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8122002BB8C00FDD262 /* TwoTableViewCell.swift */; };
+		39A7C8152002BB8C00FDD262 /* TwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C8132002BB8C00FDD262 /* TwoTableViewCell.xib */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,6 +70,12 @@
 		39A7C8012002A01A00FDD262 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		39A7C8032002A03300FDD262 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		39A7C8052002A08B00FDD262 /* OneNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNavigationViewController.swift; sourceTree = "<group>"; };
+		39A7C8072002B77F00FDD262 /* UITableView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITableView+extension.swift"; path = "../Source/UITableView+extension.swift"; sourceTree = "<group>"; };
+		39A7C80C2002B9F000FDD262 /* UITableViewExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionTest.swift; sourceTree = "<group>"; };
+		39A7C80E2002BB8000FDD262 /* OneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableViewCell.swift; sourceTree = "<group>"; };
+		39A7C80F2002BB8000FDD262 /* OneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneTableViewCell.xib; sourceTree = "<group>"; };
+		39A7C8122002BB8C00FDD262 /* TwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTableViewCell.swift; sourceTree = "<group>"; };
+		39A7C8132002BB8C00FDD262 /* TwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoTableViewCell.xib; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,6 +131,19 @@
 			path = ../Tests/UIViewControllerExtension;
 			sourceTree = "<group>";
 		};
+		39A7C80B2002B99200FDD262 /* UITableViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39A7C80C2002B9F000FDD262 /* UITableViewExtensionTest.swift */,
+				39A7C80E2002BB8000FDD262 /* OneTableViewCell.swift */,
+				39A7C80F2002BB8000FDD262 /* OneTableViewCell.xib */,
+				39A7C8122002BB8C00FDD262 /* TwoTableViewCell.swift */,
+				39A7C8132002BB8C00FDD262 /* TwoTableViewCell.xib */,
+			);
+			name = UITableViewExtension;
+			path = ../Tests/UITableViewExtension;
+			sourceTree = "<group>";
+		};
 		39B1CF2C1F2F2F5A007D5A1D = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +196,7 @@
 				39B1CF761F2F381D007D5A1D /* Int+extension.swift */,
 				3925E5951F3868F2008C7885 /* Array+extension.swift */,
 				390071A11F44A6F600993647 /* Date+extension.swift */,
+				39A7C8072002B77F00FDD262 /* UITableView+extension.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -177,6 +204,7 @@
 		39B1CF781F2F3D2A007D5A1D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				39A7C80B2002B99200FDD262 /* UITableViewExtension */,
 				39A7C7FA20029D5800FDD262 /* UIViewControllerExtension */,
 				3925E5991F39ABC6008C7885 /* UIViewExtension */,
 				39E99E971F30879300F90C8E /* UINavigationControllerExtensionTest.swift */,
@@ -293,6 +321,8 @@
 			files = (
 				3925E5AA1F3B0CE4008C7885 /* CustomViewTest.xib in Resources */,
 				39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */,
+				39A7C8152002BB8C00FDD262 /* TwoTableViewCell.xib in Resources */,
+				39A7C8112002BB8000FDD262 /* OneTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +340,7 @@
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
 				39B1CF771F2F381D007D5A1D /* Int+extension.swift in Sources */,
+				39A7C8082002B77F00FDD262 /* UITableView+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,14 +351,18 @@
 				39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */,
 				39B1CF7A1F2F3DC9007D5A1D /* IntExtensionTest.swift in Sources */,
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
+				39A7C80D2002B9F000FDD262 /* UITableViewExtensionTest.swift in Sources */,
+				39A7C8092002B77F00FDD262 /* UITableView+extension.swift in Sources */,
 				39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
+				39A7C8102002BB8000FDD262 /* OneTableViewCell.swift in Sources */,
 				39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */,
 				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
 				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
+				39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */,
 				39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
