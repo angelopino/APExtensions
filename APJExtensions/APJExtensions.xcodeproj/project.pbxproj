@@ -18,6 +18,12 @@
 		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
 		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
+		39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */; };
+		39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */; };
+		39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */; };
+		39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8012002A01A00FDD262 /* OneViewController.swift */; };
+		39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8032002A03300FDD262 /* TwoViewController.swift */; };
+		39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8052002A08B00FDD262 /* OneNavigationViewController.swift */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -51,6 +57,12 @@
 		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
 		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "../Source/UIViewController+extension.swift"; sourceTree = "<group>"; };
+		39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTest.swift; sourceTree = "<group>"; };
+		39A7C8012002A01A00FDD262 /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		39A7C8032002A03300FDD262 /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		39A7C8052002A08B00FDD262 /* OneNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneNavigationViewController.swift; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +103,19 @@
 			);
 			name = UIViewExtension;
 			path = ../Tests/UIViewExtension;
+			sourceTree = "<group>";
+		};
+		39A7C7FA20029D5800FDD262 /* UIViewControllerExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */,
+				39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */,
+				39A7C8012002A01A00FDD262 /* OneViewController.swift */,
+				39A7C8032002A03300FDD262 /* TwoViewController.swift */,
+				39A7C8052002A08B00FDD262 /* OneNavigationViewController.swift */,
+			);
+			name = UIViewControllerExtension;
+			path = ../Tests/UIViewControllerExtension;
 			sourceTree = "<group>";
 		};
 		39B1CF2C1F2F2F5A007D5A1D = {
@@ -138,6 +163,7 @@
 		39B1CF6F1F2F379D007D5A1D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */,
 				393217811F30D4B70015C8E4 /* NSObject+extension.swift */,
 				393217821F30D4B70015C8E4 /* UIView+extension.swift */,
 				39B1CF741F2F37E1007D5A1D /* UINavigationController+extension.swift */,
@@ -151,6 +177,7 @@
 		39B1CF781F2F3D2A007D5A1D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				39A7C7FA20029D5800FDD262 /* UIViewControllerExtension */,
 				3925E5991F39ABC6008C7885 /* UIViewExtension */,
 				39E99E971F30879300F90C8E /* UINavigationControllerExtensionTest.swift */,
 				39B1CF791F2F3DC9007D5A1D /* IntExtensionTest.swift */,
@@ -265,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3925E5AA1F3B0CE4008C7885 /* CustomViewTest.xib in Resources */,
+				39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +305,7 @@
 			files = (
 				39B1CF751F2F37E1007D5A1D /* UINavigationController+extension.swift in Sources */,
 				390071A21F44A6F600993647 /* Date+extension.swift in Sources */,
+				39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */,
 				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
@@ -291,11 +320,15 @@
 				39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */,
 				39B1CF7A1F2F3DC9007D5A1D /* IntExtensionTest.swift in Sources */,
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
+				39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
+				39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */,
 				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
+				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
+				39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

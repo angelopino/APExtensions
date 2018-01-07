@@ -31,7 +31,7 @@ public extension UINavigationController {
         return nil
     }
     
-    func index(of type: UIViewController.Type)-> Int? {
+    public func index(of type: UIViewController.Type)-> Int? {
         return viewControllers.index(where: { Swift.type(of: $0) == type })
     }
 }
