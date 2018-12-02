@@ -9,6 +9,13 @@
 import UIKit
 
 public extension Array {
+    public var isNotEmpty: Bool {
+        return !isEmpty
+    }
+    
+    public var random: Element {
+        return self[Int(arc4random_uniform(UInt32(count)))]
+    }
 
     public mutating func appendNvl(_ newElement: Element?) {
         guard let el = newElement else { return }
@@ -27,6 +34,20 @@ public extension Array {
         }
     }
     
+    public mutating func fill(_ by: Element, length: Int, prepend: Bool = false) {
+        let fillLength = length - count
+        if fillLength > 0 {
+            for _ in 0..<fillLength {
+                prepend ? insert(by, at: 0) : append(by)
+            }
+        }
+    }
+    
+    public mutating func appendIf(_ element: Element?, condition: Bool) {
+        guard condition else { return }
+        appendNvl(element)
+    }
+    
     public func last(where predicate: (Element) throws -> Bool) rethrows -> Element? {
         guard count > 0 else { return nil }
         for el in reversed() {
@@ -35,6 +56,17 @@ public extension Array {
             }
         }
         return nil
+    }
+    
+    public func values(by index: [Int]) -> [Element] {
+        var result = [Element]()
+        guard index.count <= self.count && index.count >= 0 else {
+            return result
+        }
+        index.forEach {
+            result.append(self[$0])
+        }
+        return result
     }
 
 }

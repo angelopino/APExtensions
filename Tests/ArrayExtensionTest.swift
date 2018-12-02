@@ -216,4 +216,35 @@ class ArrayExtensionTest: XCTestCase {
         isContained = arr.containsNvl(string4)
         XCTAssertTrue(isContained)
     }
+    
+    func testRandom() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3, string4, string5]
+        
+        let ret = arr.random
+        
+        XCTAssert(arr.contains(ret))
+    }
+    
+    func testAppendIf() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3]
+        
+        arr.appendIf(string4, condition: false)
+        XCTAssert(!arr.contains(string4))
+        
+        arr.appendIf(string5, condition: true)
+        XCTAssert(arr.contains(string5))
+        
+    }
 }

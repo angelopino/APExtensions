@@ -28,12 +28,7 @@ class UITableViewExtensionTest: XCTestCase {
         tableView.register(cellName: OneTableViewCell.className, bundle: bundle)
         tableView.register(cellName: TwoTableViewCell.className)
         test(tableView: tableView)
-        
-        do {
-            tableView.register(cellName: "fakecell")
-        } catch {
-            XCTAssert(true)
-        }
+        tableView.register(cellName: "fakecell")
     }
     
     func testRegisterCellNames() {

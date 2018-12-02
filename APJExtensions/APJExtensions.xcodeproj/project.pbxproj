@@ -18,6 +18,8 @@
 		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
 		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
+		395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
+		395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */; };
 		39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */; };
 		39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */; };
@@ -31,6 +33,7 @@
 		39A7C8112002BB8000FDD262 /* OneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C80F2002BB8000FDD262 /* OneTableViewCell.xib */; };
 		39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C8122002BB8C00FDD262 /* TwoTableViewCell.swift */; };
 		39A7C8152002BB8C00FDD262 /* TwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C8132002BB8C00FDD262 /* TwoTableViewCell.xib */; };
+		39A7E24920098EDD00F36332 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7E24820098EDD00F36332 /* String+extension.swift */; };
 		39B1CF5E1F2F3022007D5A1D /* APJExtensionsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */; };
 		39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B1CF621F2F3022007D5A1D /* APJExtensionsiOSTests.swift */; };
 		39B1CF651F2F3022007D5A1D /* APJExtensionsiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +67,7 @@
 		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
 		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		395EE87421B4A496007D6885 /* UIWindow+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+extension.swift"; path = "../Source/UIWindow+extension.swift"; sourceTree = "<group>"; };
 		39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "../Source/UIViewController+extension.swift"; sourceTree = "<group>"; };
 		39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTest.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		39A7C80F2002BB8000FDD262 /* OneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OneTableViewCell.xib; sourceTree = "<group>"; };
 		39A7C8122002BB8C00FDD262 /* TwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoTableViewCell.swift; sourceTree = "<group>"; };
 		39A7C8132002BB8C00FDD262 /* TwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoTableViewCell.xib; sourceTree = "<group>"; };
+		39A7E24820098EDD00F36332 /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+extension.swift"; path = "../Source/String+extension.swift"; sourceTree = "<group>"; };
 		39B1CF551F2F3022007D5A1D /* APJExtensionsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APJExtensionsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B1CF571F2F3022007D5A1D /* APJExtensionsiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APJExtensionsiOS.h; sourceTree = "<group>"; };
 		39B1CF581F2F3022007D5A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -197,6 +202,8 @@
 				3925E5951F3868F2008C7885 /* Array+extension.swift */,
 				390071A11F44A6F600993647 /* Date+extension.swift */,
 				39A7C8072002B77F00FDD262 /* UITableView+extension.swift */,
+				39A7E24820098EDD00F36332 /* String+extension.swift */,
+				395EE87421B4A496007D6885 /* UIWindow+extension.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -273,7 +280,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Pino, Angelo";
 				TargetAttributes = {
 					39B1CF541F2F3022007D5A1D = {
@@ -340,7 +347,9 @@
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
 				39B1CF771F2F381D007D5A1D /* Int+extension.swift in Sources */,
+				395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */,
 				39A7C8082002B77F00FDD262 /* UITableView+extension.swift in Sources */,
+				39A7E24920098EDD00F36332 /* String+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +373,7 @@
 				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
 				39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */,
 				39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */,
+				395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +402,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -399,6 +410,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -426,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -452,6 +464,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -459,6 +472,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -480,7 +494,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -31,4 +31,12 @@ public extension UIView {
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(marginLeft)-[subview]-\(marginRight)-|", metrics: nil, views: views))
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(marginTop)-[subview]-\(marginBottom)-|", metrics: nil, views: views))
     }
+
+    public func snapshot() -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
+        drawHierarchy(in: bounds, afterScreenUpdates: true)
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return result
+    }
 }
