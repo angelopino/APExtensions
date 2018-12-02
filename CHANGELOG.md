@@ -2,7 +2,8 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
-- `0.0.11` Releases - [0.0.12](#0012)
+- `0.0.13` Releases - [0.0.13](#0013)
+- `0.0.12` Releases - [0.0.12](#0012)
 - `0.0.9` Releases - [0.0.9](#009)
 - `0.0.8` Releases - [0.0.8](#008)
 - `0.0.7` Releases - [0.0.7](#007)
@@ -12,6 +13,13 @@ All notable changes to this project will be documented in this file.
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
 
+## [0.0.13]
+Released on 2018-12-03
+
+#### Added
+- `UIWindow` extension.
+- `Array` extension methods.
+- `UIView` extension methods.
 
 ## [0.0.12]
 Released on 2018-01-08
