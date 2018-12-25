@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/angelopino/APJExtensions"
   s.license      = "MIT"
   s.author       = { "Angelo Pino" => "pino.angelo@gmail.com" }
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/angelopino/APJExtensions.git", :tag => "#{s.version}" }
   s.source_files = 'Source/*.swift'
 end
