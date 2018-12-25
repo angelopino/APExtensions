@@ -19,4 +19,8 @@ public extension String {
     public func test(regex: String) -> Bool {
         return self.range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
     }
+    
+    public var isNotEmpty: Bool {
+        return !isEmpty
+    }
 }
