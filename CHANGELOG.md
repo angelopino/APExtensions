@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.14` Releases - [0.0.14](#0014)
 - `0.0.13` Releases - [0.0.13](#0013)
 - `0.0.12` Releases - [0.0.12](#0012)
 - `0.0.9` Releases - [0.0.9](#009)
@@ -12,6 +13,12 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.14]
+Released on 2018-12-25
+
+#### Added
+- `UIWindow` params for replace root viewcontroller method.
 
 ## [0.0.13]
 Released on 2018-12-03
