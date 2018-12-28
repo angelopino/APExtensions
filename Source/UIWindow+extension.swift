@@ -9,6 +9,17 @@
 import UIKit
 
 public extension UIWindow {
+    
+    public var topController: UIViewController? {
+        if var topController = rootViewController {
+            while let presentedViewController = topController.presentedViewController, !(presentedViewController is UIAlertController) {
+                topController = presentedViewController
+            }
+            return topController
+        }
+        return nil
+    }
+    
     public func replaceRootViewControllerWith(_ replacementController: UIViewController, animated: Bool = true, duration: TimeInterval = 0.5, options: UIView.AnimationOptions = .transitionFlipFromRight, completion: (() -> Void)? = nil) {
         
         let replaceCallback: () -> Void = {

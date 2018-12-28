@@ -19,4 +19,15 @@ public extension UIViewController {
         let controllerIdentifier = identifier ?? className
         return sb?.instantiateViewController(withIdentifier: controllerIdentifier)
     }
+
+    public func modalPresent(_ modalTransitionStyle: UIModalTransitionStyle = .coverVertical, modalPresentationStyle: UIModalPresentationStyle = .overCurrentContext, animated: Bool = true, completion: (() -> Void)? = nil) {
+        self.modalTransitionStyle = modalTransitionStyle
+        self.modalPresentationStyle = modalPresentationStyle
+        let topController = UIApplication.shared.keyWindow?.topController
+        topController?.present(self, animated: animated) { [weak self] in
+            self?.modalPresentationCapturesStatusBarAppearance = true
+            self?.setNeedsStatusBarAppearanceUpdate()
+            completion?()
+        }
+    }
 }
