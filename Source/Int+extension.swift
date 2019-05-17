@@ -10,19 +10,19 @@ import UIKit
 
 public extension Int {
 
-    public var string: String {
+    var string: String {
         return "\(self)"
     }
     
-    public var cgFloat: CGFloat {
+    var cgFloat: CGFloat {
         return CGFloat(self)
     }
     
-    public var double: Double {
+    var double: Double {
         return Double(self)
     }
     
-    public var float: Float {
+    var float: Float {
         return Float(self)
     }
 }

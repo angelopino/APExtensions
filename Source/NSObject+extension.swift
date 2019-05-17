@@ -10,11 +10,11 @@ import UIKit
 
 public extension NSObject {
     
-    public var className: String {
+    var className: String {
         return String(describing: type(of: self)).components(separatedBy: ".").last!
     }
     
-    public class var className: String {
+    class var className: String {
         return String(describing: self).components(separatedBy: ".").last!
     }
     

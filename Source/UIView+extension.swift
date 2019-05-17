@@ -10,18 +10,18 @@ import UIKit
 
 public extension UIView {
 
-    public func removeSubviews() {
+    func removeSubviews() {
         for view in self.subviews {
             view.removeFromSuperview()
         }
     }
     
-    public func loadViewFromNib(_ nibName: String? = nil) -> UIView? {
+    func loadViewFromNib(_ nibName: String? = nil) -> UIView? {
         guard let nibObjects = Bundle(for: type(of: self)).loadNibNamed(nibName ?? className, owner: self, options: nil) else { return nil }
         return nibObjects.first as? UIView
     }
     
-    public func bindFrameToSuperviewBounds(marginLeft: CGFloat = 0, marginRight: CGFloat = 0, marginTop: CGFloat = 0, marginBottom: CGFloat = 0) {
+    func bindFrameToSuperviewBounds(marginLeft: CGFloat = 0, marginRight: CGFloat = 0, marginTop: CGFloat = 0, marginBottom: CGFloat = 0) {
         guard let superview = self.superview else {
             print("Error! `superview` was nil – call `addSubview(view: UIView)` before calling `bindFrameToSuperviewBounds()` to fix this.")
             return
@@ -32,7 +32,7 @@ public extension UIView {
         superview.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(marginTop)-[subview]-\(marginBottom)-|", metrics: nil, views: views))
     }
 
-    public func snapshot() -> UIImage? {
+    func snapshot() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
         drawHierarchy(in: bounds, afterScreenUpdates: true)
         let result = UIGraphicsGetImageFromCurrentImageContext()

@@ -10,7 +10,7 @@ import UIKit
 
 public extension UINavigationController {
     
-    public var rootViewController : UIViewController? {
+    var rootViewController : UIViewController? {
         set {
             guard let rootVC = newValue else { return }
             setViewControllers([rootVC], animated: false)
@@ -21,7 +21,7 @@ public extension UINavigationController {
     }
     
     @discardableResult
-    public func popToViewController(viewControllerType: UIViewController.Type, animated: Bool = true) -> UIViewController? {
+    func popToViewController(viewControllerType: UIViewController.Type, animated: Bool = true) -> UIViewController? {
         for viewController in viewControllers {
             if viewController.isKind(of: viewControllerType) {
                 popToViewController(viewController, animated: true)
@@ -31,8 +31,8 @@ public extension UINavigationController {
         return nil
     }
     
-    public func index(of type: UIViewController.Type)-> Int? {
-        return viewControllers.index(where: { Swift.type(of: $0) == type })
+    func index(of type: UIViewController.Type)-> Int? {
+        return viewControllers.firstIndex(where: { Swift.type(of: $0) == type })
     }
 }
 

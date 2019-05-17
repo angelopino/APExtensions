@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIWindow {
     
-    public var topController: UIViewController? {
+    var topController: UIViewController? {
         if var topController = rootViewController {
             while let presentedViewController = topController.presentedViewController, !(presentedViewController is UIAlertController) {
                 topController = presentedViewController
@@ -20,7 +20,7 @@ public extension UIWindow {
         return nil
     }
     
-    public func replaceRootViewControllerWith(_ replacementController: UIViewController, animated: Bool = true, duration: TimeInterval = 0.5, options: UIView.AnimationOptions = .transitionFlipFromRight, completion: (() -> Void)? = nil) {
+    func replaceRootViewControllerWith(_ replacementController: UIViewController, animated: Bool = true, duration: TimeInterval = 0.5, options: UIView.AnimationOptions = .transitionFlipFromRight, completion: (() -> Void)? = nil) {
         
         let replaceCallback: () -> Void = {
             self.rootViewController?.removeFromParent()

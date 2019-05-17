@@ -10,12 +10,12 @@ import UIKit
 
 public extension UITableView {
     
-    public func register(cellName: String, bundle: Bundle? = nil) {
+    func register(cellName: String, bundle: Bundle? = nil) {
         let uiNib = UINib(nibName: cellName, bundle: bundle)
         register(uiNib, forCellReuseIdentifier: cellName)
     }
     
-    public func register(cellNames: [String], bundle: Bundle? = nil) {
+    func register(cellNames: [String], bundle: Bundle? = nil) {
         cellNames.forEach { self.register(cellName: $0, bundle: bundle) }
     }
 }
