@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.18` Releases - [0.0.18](#0018)
 - `0.0.17` Releases - [0.0.17](#0017)
 - `0.0.16` Releases - [0.0.16](#0016)
 - `0.0.15` Releases - [0.0.15](#0015)
@@ -15,6 +16,13 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.18]
+Released on 2019-05-20
+
+#### Added
+- `Data` extension
+-  Test cases
 
 ## [0.0.17]
 Released on 2019-05-17

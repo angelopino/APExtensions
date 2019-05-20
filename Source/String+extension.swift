@@ -10,7 +10,7 @@ import UIKit
 
 public extension String {
 
-    func count(with regex: String) -> Int {
+    func count(regex: String) -> Int {
         guard let regex = try? NSRegularExpression(pattern: regex, options: []) else { return 0 }
         let matches = regex.matches(in: self, options: [], range: NSRange(location: 0, length: count))
         return matches.count

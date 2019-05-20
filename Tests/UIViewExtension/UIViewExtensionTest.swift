@@ -41,18 +41,18 @@ class UIViewExtensionTest: XCTestCase {
         let view = CustomViewTest()
         let viewFromNib = view.loadViewFromNib()
         
-        XCTAssert(viewFromNib != nil)
+        XCTAssertNotNil(viewFromNib)
     }
     
     func testLoadViewFromNibWithNibName() {
         let view = CustomViewTest()
         let viewFromNib = view.loadViewFromNib("CustomViewTest")
         
-        XCTAssert(viewFromNib != nil)
+        XCTAssertNotNil(viewFromNib)
     }
     
     func testBindFrameToSuperviewBounds() {
-        var viewBind = UIView()
+        let viewBind = UIView()
         let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         
         viewForCheck.addSubview(viewBind)
@@ -61,18 +61,73 @@ class UIViewExtensionTest: XCTestCase {
         viewBind.layoutIfNeeded()
         
         XCTAssertEqual([viewForCheck.frame.height, viewForCheck.frame.width], [viewBind.frame.height, viewBind.frame.width])
+    }
+    
+    func testBindFrameToSuperviewBoundsWithMargin() {
+        var viewBind = UIView()
+        let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
         
         viewBind.removeFromSuperview()
         viewBind = UIView()
         let margin: CGFloat = 10,
-            marginForCheck = margin * 2
+        marginForCheck = margin * 2
         viewForCheck.addSubview(viewBind)
         viewBind.bindFrameToSuperviewBounds(marginLeft: margin, marginRight: margin, marginTop: margin, marginBottom: margin)
         viewBind.setNeedsLayout()
         viewBind.layoutIfNeeded()
         
         XCTAssertEqual([viewForCheck.frame.height - marginForCheck, viewForCheck.frame.width - marginForCheck], [viewBind.frame.height, viewBind.frame.width])
+    }
+    
+    func testBindFrameToSuperviewBoundsMarginLeftFail() {
+        let viewBind = UIView()
+        let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let margin: CGFloat = 10
         
+        viewForCheck.addSubview(viewBind)
+        viewBind.bindFrameToSuperviewBounds(marginLeft: margin)
+        viewBind.setNeedsLayout()
+        viewBind.layoutIfNeeded()
+        
+        XCTAssertNotEqual([viewForCheck.frame.height, viewForCheck.frame.width], [viewBind.frame.height, viewBind.frame.width])
+    }
+    
+    func testBindFrameToSuperviewBoundsMarginRight() {
+        let viewBind = UIView()
+        let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        let margin: CGFloat = 10
+        
+        viewForCheck.addSubview(viewBind)
+        viewBind.bindFrameToSuperviewBounds(marginRight: margin)
+        viewBind.setNeedsLayout()
+        viewBind.layoutIfNeeded()
+        
+        XCTAssertEqual([viewForCheck.frame.height, viewForCheck.frame.width - margin], [viewBind.frame.height, viewBind.frame.width])
+    }
+    
+    func testBindFrameToSuperviewSuperviewFail() {
+        let viewBind = UIView()
+        let viewForCheck = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
+        
+        viewBind.bindFrameToSuperviewBounds()
+        viewBind.setNeedsLayout()
+        viewBind.layoutIfNeeded()
+        
+        XCTAssertNotEqual([viewForCheck.frame.height, viewForCheck.frame.width], [viewBind.frame.height, viewBind.frame.width])
+    }
+
+    
+    func testSnapshot() {
+        let view = CustomViewTest()
+        let viewFromNib = view.loadViewFromNib()
+        
+        XCTAssertNotNil(viewFromNib?.snapshot())
+    }
+    
+    func testSnapshotNil() {
+        let view = CustomViewTest()
+        
+        XCTAssertNil(view.snapshot())
     }
     
 }

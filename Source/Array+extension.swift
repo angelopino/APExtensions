@@ -60,10 +60,8 @@ public extension Array {
     
     func values(by index: [Int]) -> [Element] {
         var result = [Element]()
-        guard index.count <= self.count && index.count >= 0 else {
-            return result
-        }
         index.forEach {
+            guard $0 < self.count && $0 > -1 else { return }
             result.append(self[$0])
         }
         return result

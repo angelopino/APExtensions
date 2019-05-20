@@ -247,4 +247,53 @@ class ArrayExtensionTest: XCTestCase {
         XCTAssert(arr.contains(string5))
         
     }
+    
+    func testIsNotEmpty() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3"
+        arr = [string1, string2, string3]
+        
+        XCTAssertTrue(arr.isNotEmpty)
+    }
+    
+    func testFillLength() {
+        
+        enum FillElem {
+            case fill
+        }
+        
+        var arrElem = [FillElem]()
+        arrElem.fill(.fill, length: 10)
+        
+        XCTAssert(arrElem.count == 10)
+    }
+    
+    func testValuesByIdxs() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3, string4, string5]
+        
+        let arrValues = arr.values(by: [0, 2, 4])
+        
+        XCTAssertEqual([string1, string3, string5], arrValues)
+    }
+    
+    func testFailValuesByIdxs() {
+        let string1 = "string1",
+        string2 = "string2",
+        string3 = "string3",
+        string4 = "string4",
+        string5 = "string5"
+        
+        arr = [string1, string2, string3, string4, string5]
+        
+        let arrValues = arr.values(by: [-1, 10, 16])
+        
+        XCTAssertTrue(arrValues.isEmpty)
+    }
 }
