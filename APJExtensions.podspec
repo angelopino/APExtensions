@@ -12,4 +12,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "12.0"
   s.source       = { :git => "https://github.com/angelopino/APJExtensions.git", :tag => "#{s.version}" }
   s.source_files = 'Source/*.swift'
+  s.swift_versions = '5.0'
 end
