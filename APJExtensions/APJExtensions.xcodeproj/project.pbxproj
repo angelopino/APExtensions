@@ -20,6 +20,9 @@
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
 		395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
+		3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
+		3985C66622F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
+		3985C66822F4D4F200B66286 /* UIColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */; };
 		39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */; };
 		39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */; };
 		39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */; };
@@ -71,6 +74,8 @@
 		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		395EE87421B4A496007D6885 /* UIWindow+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+extension.swift"; path = "../Source/UIWindow+extension.swift"; sourceTree = "<group>"; };
+		3985C66422F4D39700B66286 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "../Source/UIColor+extension.swift"; sourceTree = "<group>"; };
+		3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTest.swift; sourceTree = "<group>"; };
 		39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "../Source/UIViewController+extension.swift"; sourceTree = "<group>"; };
 		39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTest.swift; sourceTree = "<group>"; };
@@ -202,6 +207,7 @@
 			children = (
 				39C2992F2292C72300114A79 /* Data+extension.swift */,
 				39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */,
+				39C299372292DD9000114A79 /* StringExtensionTest.swift */,
 				393217811F30D4B70015C8E4 /* NSObject+extension.swift */,
 				393217821F30D4B70015C8E4 /* UIView+extension.swift */,
 				39B1CF741F2F37E1007D5A1D /* UINavigationController+extension.swift */,
@@ -211,6 +217,7 @@
 				39A7C8072002B77F00FDD262 /* UITableView+extension.swift */,
 				39A7E24820098EDD00F36332 /* String+extension.swift */,
 				395EE87421B4A496007D6885 /* UIWindow+extension.swift */,
+				3985C66422F4D39700B66286 /* UIColor+extension.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -227,7 +234,7 @@
 				3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */,
 				390071A31F44A7F000993647 /* DateExtensionTest.swift */,
 				39C299342292C7BD00114A79 /* DataExtensionTest.swift */,
-				39C299372292DD9000114A79 /* StringExtensionTest.swift */,
+				3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -353,6 +360,7 @@
 				39B1CF751F2F37E1007D5A1D /* UINavigationController+extension.swift in Sources */,
 				390071A21F44A6F600993647 /* Date+extension.swift in Sources */,
 				39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */,
+				3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */,
 				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
@@ -375,12 +383,14 @@
 				39A7C8092002B77F00FDD262 /* UITableView+extension.swift in Sources */,
 				39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
+				3985C66622F4D39700B66286 /* UIColor+extension.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
 				39A7C8102002BB8000FDD262 /* OneTableViewCell.swift in Sources */,
 				39C299382292DD9000114A79 /* StringExtensionTest.swift in Sources */,
 				39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */,
 				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
+				3985C66822F4D4F200B66286 /* UIColorExtensionTest.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
 				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
 				39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */,

@@ -36,7 +36,7 @@ class UIViewControllerExtensionTest: XCTestCase {
         
         let controllerWithStoryboard = OneNavigationViewController.instantiateFromStoryboard(storyboard) as? OneNavigationViewController
         XCTAssertNotNil(controllerWithStoryboard)
-        controllerWithStoryboard?.rootViewController?.performSegueWithClassName(withController: TwoViewController.self)
+        controllerWithStoryboard?.rootViewController?.performSegue(controller: TwoViewController.self)
         
         let segues = controllerWithStoryboard?.rootViewController?.value(forKey: "storyboardSegueTemplates") as? [AnyObject],
             segueExist = segues?.contains(where: { (segue) -> Bool in

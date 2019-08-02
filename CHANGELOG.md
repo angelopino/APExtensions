@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.21` Releases - [0.0.21](#0021)
 - `0.0.20` Releases - [0.0.20](#0020)
 - `0.0.18` Releases - [0.0.18](#0018)
 - `0.0.17` Releases - [0.0.17](#0017)
@@ -17,6 +18,16 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.21]
+Released on 2019-08-02
+
+#### Added
+- `UIColor` extension
+-  Test cases
+
+#### Updated
+- `UIViewController` rename method performSegueWithClassName(withController.
 
 ## [0.0.20]
 Released on 2019-05-30

@@ -10,8 +10,8 @@ import UIKit
 
 public extension UIViewController {
     
-    func performSegueWithClassName(withController controller: UIViewController.Type, sender: Any? = nil) {
-        performSegue(withIdentifier: controller.className, sender: nil)
+    func performSegue(controller type: UIViewController.Type, sender: Any? = nil) {
+        performSegue(withIdentifier: type.className, sender: sender)
     }
 
     static func instantiateFromStoryboard(_ storyboard: UIStoryboard? = nil, with identifier: String? = nil) -> UIViewController? {
