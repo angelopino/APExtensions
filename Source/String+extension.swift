@@ -23,4 +23,16 @@ public extension String {
     var isNotEmpty: Bool {
         return !isEmpty
     }
+    
+    var toImage: UIImage? {
+        return UIImage(named: self)
+    }
+    
+    var storyboard: UIStoryboard {
+        return UIStoryboard(name: self, bundle: nil)
+    }
+    
+    var toInt: Int? {
+        return Int(self)
+    }
 }

@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.22` Releases - [0.0.22](#0022)
 - `0.0.21` Releases - [0.0.21](#0021)
 - `0.0.20` Releases - [0.0.20](#0020)
 - `0.0.18` Releases - [0.0.18](#0018)
@@ -18,6 +19,13 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.22]
+Released on 2019-08-07
+
+#### Added
+- `UIColor` extension:  with rgb
+- `String` extension:  new methods
 
 ## [0.0.21]
 Released on 2019-08-02

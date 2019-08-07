@@ -32,4 +32,13 @@ class StringExtensionTest: XCTestCase {
         let count = stringToBeTest.count(regex: regex)
         XCTAssertTrue(count > 0)
     }
+    
+    func testToInt() {
+        let intString = "34"
+        XCTAssertEqual(intString.toInt, 34)
+        
+        // fail test
+        let failString = "asd3"
+        XCTAssertEqual(failString.toInt, nil)
+    }
 }
