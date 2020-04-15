@@ -74,6 +74,8 @@
 		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		395EE87421B4A496007D6885 /* UIWindow+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+extension.swift"; path = "../Source/UIWindow+extension.swift"; sourceTree = "<group>"; };
+		397F0AF0244686BB005B036F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
+		397F0AF1244686BB005B036F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3985C66422F4D39700B66286 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "../Source/UIColor+extension.swift"; sourceTree = "<group>"; };
 		3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTest.swift; sourceTree = "<group>"; };
 		39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "../Source/UIViewController+extension.swift"; sourceTree = "<group>"; };
@@ -163,6 +165,8 @@
 		39B1CF2C1F2F2F5A007D5A1D = {
 			isa = PBXGroup;
 			children = (
+				397F0AF1244686BB005B036F /* LICENSE */,
+				397F0AF0244686BB005B036F /* Package.swift */,
 				39363B791F67265D00C1960E /* CHANGELOG.md */,
 				39363B7A1F67265D00C1960E /* README.md */,
 				39112CDA1F308898004BDB25 /* APJExtensions.podspec */,
@@ -462,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -520,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

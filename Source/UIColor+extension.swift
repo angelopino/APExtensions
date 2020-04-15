@@ -20,16 +20,16 @@ public extension UIColor {
             return .gray
         }
         
-        var rgbValue: UInt32 = 0
-        Scanner(string: cString).scanHexInt32(&rgbValue)
+        var rgbValue: UInt64 = 0
+        Scanner(string: cString).scanHexInt64(&rgbValue)
         
         return colorFrom(rgb: rgbValue, alpha: alpha)
     }
     
-    static func colorFrom(rgb: UInt32, alpha: CGFloat = 1.0) -> UIColor {
-        let red = CGFloat((rgb & 0xFF0000) >> 16) / 0xff,
-            green = CGFloat((rgb & 0xFF00) >> 8) / 0xff,
-            blue = CGFloat(rgb & 0xFF) / 0xff
+    static func colorFrom(rgb: UInt64, alpha: CGFloat = 1.0) -> UIColor {
+        let red = CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
+            green = CGFloat((rgb & 0xFF00) >> 8) / 255.0,
+            blue = CGFloat(rgb & 0xFF) / 255.0
         
         return UIColor(red: red, green: green, blue: blue, alpha: alpha)
     }
