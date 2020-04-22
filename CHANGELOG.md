@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.26` Releases - [0.0.26](#0026)
 - `0.0.25` Releases - [0.0.25](#0025)
 - `0.0.24` Releases - [0.0.24](#0024)
 - `0.0.22` Releases - [0.0.22](#0022)
@@ -21,6 +22,12 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.26]
+Released on 2020-04-23
+
+#### Added
+- `Double` extension:  formatUsingAbbrevation method for abbreviate number to String k's friendly
 
 ## [0.0.25]
 Released on 2020-04-22

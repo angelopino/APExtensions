@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		390071A21F44A6F600993647 /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390071A11F44A6F600993647 /* Date+extension.swift */; };
 		390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390071A31F44A7F000993647 /* DateExtensionTest.swift */; };
-		390595992450831700402070 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C299372292DD9000114A79 /* StringExtensionTest.swift */; };
+		390595A02450FBC000402070 /* DoubleExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3905959F2450FBC000402070 /* DoubleExtensionTest.swift */; };
+		390595A32450FC2800402070 /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390595A12450FC2800402070 /* StringExtensionTest.swift */; };
+		390595A42450FC2800402070 /* UIColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390595A22450FC2800402070 /* UIColorExtensionTest.swift */; };
+		390595A62450FC3D00402070 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390595A52450FC3D00402070 /* Double+Extension.swift */; };
 		39112CDB1F308898004BDB25 /* APJExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 39112CDA1F308898004BDB25 /* APJExtensions.podspec */; };
 		3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5951F3868F2008C7885 /* Array+extension.swift */; };
 		3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */; };
@@ -23,7 +26,6 @@
 		395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
 		3985C66622F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
-		3985C66822F4D4F200B66286 /* UIColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */; };
 		39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */; };
 		39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */; };
 		39A7C80020029DD800FDD262 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */; };
@@ -62,6 +64,10 @@
 /* Begin PBXFileReference section */
 		390071A11F44A6F600993647 /* Date+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+extension.swift"; path = "../Source/Date+extension.swift"; sourceTree = "<group>"; };
 		390071A31F44A7F000993647 /* DateExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionTest.swift; path = ../Tests/DateExtensionTest.swift; sourceTree = "<group>"; };
+		3905959F2450FBC000402070 /* DoubleExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DoubleExtensionTest.swift; path = ../Tests/DoubleExtensionTest.swift; sourceTree = "<group>"; };
+		390595A12450FC2800402070 /* StringExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensionTest.swift; path = ../Tests/StringExtensionTest.swift; sourceTree = "<group>"; };
+		390595A22450FC2800402070 /* UIColorExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensionTest.swift; path = ../Tests/UIColorExtensionTest.swift; sourceTree = "<group>"; };
+		390595A52450FC3D00402070 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Double+Extension.swift"; path = "../Source/Double+Extension.swift"; sourceTree = "<group>"; };
 		39112CDA1F308898004BDB25 /* APJExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = APJExtensions.podspec; path = ../APJExtensions.podspec; sourceTree = "<group>"; };
 		3925E5951F3868F2008C7885 /* Array+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+extension.swift"; path = "../Source/Array+extension.swift"; sourceTree = "<group>"; };
 		3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtensionTest.swift; path = ../Tests/ArrayExtensionTest.swift; sourceTree = "<group>"; };
@@ -77,7 +83,6 @@
 		397F0AF0244686BB005B036F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		397F0AF1244686BB005B036F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3985C66422F4D39700B66286 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "../Source/UIColor+extension.swift"; sourceTree = "<group>"; };
-		3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensionTest.swift; sourceTree = "<group>"; };
 		39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "../Source/UIViewController+extension.swift"; sourceTree = "<group>"; };
 		39A7C7FB20029D5800FDD262 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		39A7C7FC20029D5800FDD262 /* UIViewControllerExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensionTest.swift; sourceTree = "<group>"; };
@@ -102,7 +107,6 @@
 		39B1CF791F2F3DC9007D5A1D /* IntExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IntExtensionTest.swift; path = ../Tests/IntExtensionTest.swift; sourceTree = "<group>"; };
 		39C2992F2292C72300114A79 /* Data+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Data+extension.swift"; path = "../Source/Data+extension.swift"; sourceTree = "<group>"; };
 		39C299342292C7BD00114A79 /* DataExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataExtensionTest.swift; path = ../Tests/DataExtensionTest.swift; sourceTree = "<group>"; };
-		39C299372292DD9000114A79 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		39E99E971F30879300F90C8E /* UINavigationControllerExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationControllerExtensionTest.swift; path = ../Tests/UINavigationControllerExtensionTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,14 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		390595982450816500402070 /* StringExtension */ = {
-			isa = PBXGroup;
-			children = (
-				39C299372292DD9000114A79 /* StringExtensionTest.swift */,
-			);
-			path = StringExtension;
-			sourceTree = "<group>";
-		};
 		3925E5991F39ABC6008C7885 /* UIViewExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +213,7 @@
 		39B1CF6F1F2F379D007D5A1D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				390595A52450FC3D00402070 /* Double+Extension.swift */,
 				39C2992F2292C72300114A79 /* Data+extension.swift */,
 				39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */,
 				393217811F30D4B70015C8E4 /* NSObject+extension.swift */,
@@ -236,7 +233,6 @@
 		39B1CF781F2F3D2A007D5A1D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				390595982450816500402070 /* StringExtension */,
 				39A7C80B2002B99200FDD262 /* UITableViewExtension */,
 				39A7C7FA20029D5800FDD262 /* UIViewControllerExtension */,
 				3925E5991F39ABC6008C7885 /* UIViewExtension */,
@@ -246,7 +242,9 @@
 				3925E5971F39AB1C008C7885 /* ArrayExtensionTest.swift */,
 				390071A31F44A7F000993647 /* DateExtensionTest.swift */,
 				39C299342292C7BD00114A79 /* DataExtensionTest.swift */,
-				3985C66722F4D4F200B66286 /* UIColorExtensionTest.swift */,
+				3905959F2450FBC000402070 /* DoubleExtensionTest.swift */,
+				390595A12450FC2800402070 /* StringExtensionTest.swift */,
+				390595A22450FC2800402070 /* UIColorExtensionTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -388,7 +386,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390595992450831700402070 /* StringExtensionTest.swift in Sources */,
 				39B1CF631F2F3022007D5A1D /* APJExtensionsiOSTests.swift in Sources */,
 				39B1CF7A1F2F3DC9007D5A1D /* IntExtensionTest.swift in Sources */,
 				39E99E981F30879300F90C8E /* UINavigationControllerExtensionTest.swift in Sources */,
@@ -396,14 +393,17 @@
 				39A7C8092002B77F00FDD262 /* UITableView+extension.swift in Sources */,
 				39A7C8062002A08B00FDD262 /* OneNavigationViewController.swift in Sources */,
 				393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */,
+				390595A42450FC2800402070 /* UIColorExtensionTest.swift in Sources */,
 				3985C66622F4D39700B66286 /* UIColor+extension.swift in Sources */,
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
 				39A7C8102002BB8000FDD262 /* OneTableViewCell.swift in Sources */,
 				39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */,
 				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
-				3985C66822F4D4F200B66286 /* UIColorExtensionTest.swift in Sources */,
+				390595A32450FC2800402070 /* StringExtensionTest.swift in Sources */,
+				390595A62450FC3D00402070 /* Double+Extension.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
+				390595A02450FBC000402070 /* DoubleExtensionTest.swift in Sources */,
 				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
 				39A7C8142002BB8C00FDD262 /* TwoTableViewCell.swift in Sources */,
 				39A7C8042002A03300FDD262 /* TwoViewController.swift in Sources */,
