@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.25` Releases - [0.0.25](#0025)
 - `0.0.24` Releases - [0.0.24](#0024)
 - `0.0.22` Releases - [0.0.22](#0022)
 - `0.0.21` Releases - [0.0.21](#0021)
@@ -20,6 +21,12 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+## [0.0.25]
+Released on 2020-04-22
+
+#### Added
+- `String` extension:  toDate method
 
 ## [0.0.24]
 Released on 2020-04-15

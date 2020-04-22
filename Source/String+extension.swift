@@ -35,4 +35,13 @@ public extension String {
     var toInt: Int? {
         return Int(self)
     }
+    
+    func toDate(_ format: String) -> Date? {
+        guard !isEmpty else { return nil }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.date(from: self)
+    }
+
 }
