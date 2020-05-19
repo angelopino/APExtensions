@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APJExtensions"
-  s.version      = "0.0.26"
+  s.version      = "0.0.27"
   s.summary      = "Base extensions for a new project"
   s.description  = <<-DESC
                     APJExtensions provides a base extensions for a new project.

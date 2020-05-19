@@ -17,4 +17,12 @@ public extension Date {
         return dateFormatter.string(from: self)
     }
     
+    func isEqual(to date: Date, toGranularity component: Calendar.Component, in calendar: Calendar = .current) -> Bool {
+        calendar.isDate(self, equalTo: date, toGranularity: component)
+    }
+    
+    func isEqual(to date: Date, toGranularity components: [Calendar.Component], in calendar: Calendar = .current) -> Bool {
+        return !components.contains { !calendar.isDate(self, equalTo: date, toGranularity: $0) }
+    }
+    
 }

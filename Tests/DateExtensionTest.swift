@@ -41,4 +41,32 @@ class DateExtensionTest: XCTestCase {
         XCTAssertEqual(localeForCheck, date.toString(localeFormat, locale: locale))
     }
     
+    func testIsEqualComponent() {
+        let dateString = "30/10/2020",
+            dateStringToEqual = "01/01/2020",
+            dateFormat = "dd/MM/yyyy",
+            dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = dateFormat
+        let date = dateFormatter.date(from: dateString)!,
+            dateToEqual = dateFormatter.date(from: dateStringToEqual)!
+        
+        XCTAssertTrue(date.isEqual(to: dateToEqual, toGranularity: .year))
+        XCTAssertFalse(date.isEqual(to: Date(), toGranularity: .month))
+    }
+    
+    func testIsEqualComponents() {
+        let dateString = "30/10/2020",
+            dateStringToEqual = "01/10/2020",
+            dateFormat = "dd/MM/yyyy",
+            dateFormatter = DateFormatter()
+        
+        dateFormatter.dateFormat = dateFormat
+        let date = dateFormatter.date(from: dateString)!,
+            dateToEqual = dateFormatter.date(from: dateStringToEqual)!
+        
+        XCTAssertTrue(date.isEqual(to: dateToEqual, toGranularity: [.month, .year]))
+        XCTAssertFalse(date.isEqual(to: dateToEqual, toGranularity: [.day, .year]))
+    }
+    
 }

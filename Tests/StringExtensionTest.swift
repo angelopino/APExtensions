@@ -93,12 +93,4 @@ class StringExtensionTest: XCTestCase {
         
         XCTAssertNil(dateFromString)
     }
-    
-    func testToImange() {
-        let imageString = "mosquito",
-        imageFromString = imageString.toImage
-        
-        let image = UIImage(named: "mosquito", in: Bundle(for: type(of: self)), with: nil)
-        XCTAssertNotNil(image)
-    }
 }
