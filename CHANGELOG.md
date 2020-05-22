@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.28` Releases - [0.0.28](#0028)
 - `0.0.27` Releases - [0.0.27](#0027)
 - `0.0.26` Releases - [0.0.26](#0026)
 - `0.0.25` Releases - [0.0.25](#0025)
@@ -23,6 +24,13 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+
+## [0.0.28]
+Released on 2020-05-22
+
+#### Added
+- `UserDefault` property wrapper
 
 ## [0.0.27]
 Released on 2020-05-19

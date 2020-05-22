@@ -22,6 +22,9 @@
 		393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217811F30D4B70015C8E4 /* NSObject+extension.swift */; };
 		393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217821F30D4B70015C8E4 /* UIView+extension.swift */; };
 		393217861F30D50A0015C8E4 /* NSObjectExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */; };
+		393B823C24780D19009CC36C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B823B24780D19009CC36C /* UserDefault.swift */; };
+		393B823E24780D7E009CC36C /* UserDefaultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B823D24780D7E009CC36C /* UserDefaultTest.swift */; };
+		393B823F24782AC4009CC36C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B823B24780D19009CC36C /* UserDefault.swift */; };
 		395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
@@ -79,6 +82,8 @@
 		393217851F30D50A0015C8E4 /* NSObjectExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSObjectExtensionTest.swift; path = ../Tests/NSObjectExtensionTest.swift; sourceTree = "<group>"; };
 		39363B791F67265D00C1960E /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		39363B7A1F67265D00C1960E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		393B823B24780D19009CC36C /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefault.swift; path = ../Source/UserDefault.swift; sourceTree = "<group>"; };
+		393B823D24780D7E009CC36C /* UserDefaultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultTest.swift; path = ../Tests/UserDefaultTest.swift; sourceTree = "<group>"; };
 		395EE87421B4A496007D6885 /* UIWindow+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+extension.swift"; path = "../Source/UIWindow+extension.swift"; sourceTree = "<group>"; };
 		397F0AF0244686BB005B036F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		397F0AF1244686BB005B036F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 				39A7E24820098EDD00F36332 /* String+extension.swift */,
 				395EE87421B4A496007D6885 /* UIWindow+extension.swift */,
 				3985C66422F4D39700B66286 /* UIColor+extension.swift */,
+				393B823B24780D19009CC36C /* UserDefault.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				3905959F2450FBC000402070 /* DoubleExtensionTest.swift */,
 				390595A12450FC2800402070 /* StringExtensionTest.swift */,
 				390595A22450FC2800402070 /* UIColorExtensionTest.swift */,
+				393B823D24780D7E009CC36C /* UserDefaultTest.swift */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -369,6 +376,7 @@
 			files = (
 				39B1CF751F2F37E1007D5A1D /* UINavigationController+extension.swift in Sources */,
 				390071A21F44A6F600993647 /* Date+extension.swift in Sources */,
+				393B823C24780D19009CC36C /* UserDefault.swift in Sources */,
 				39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */,
 				3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */,
 				393217831F30D4B70015C8E4 /* NSObject+extension.swift in Sources */,
@@ -398,10 +406,12 @@
 				3925E5981F39AB1C008C7885 /* ArrayExtensionTest.swift in Sources */,
 				39A7C8102002BB8000FDD262 /* OneTableViewCell.swift in Sources */,
 				39A7C7FF20029DA200FDD262 /* UIViewControllerExtensionTest.swift in Sources */,
+				393B823E24780D7E009CC36C /* UserDefaultTest.swift in Sources */,
 				390071A41F44A7F000993647 /* DateExtensionTest.swift in Sources */,
 				3925E5AB1F3B0CE4008C7885 /* UIViewExtensionTest.swift in Sources */,
 				390595A32450FC2800402070 /* StringExtensionTest.swift in Sources */,
 				390595A62450FC3D00402070 /* Double+Extension.swift in Sources */,
+				393B823F24782AC4009CC36C /* UserDefault.swift in Sources */,
 				3925E5A91F3B0CE4008C7885 /* CustomViewTest.swift in Sources */,
 				390595A02450FBC000402070 /* DoubleExtensionTest.swift in Sources */,
 				39A7C8022002A01A00FDD262 /* OneViewController.swift in Sources */,
