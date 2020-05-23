@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.29` Releases - [0.0.29](#0029)
 - `0.0.28` Releases - [0.0.28](#0028)
 - `0.0.27` Releases - [0.0.27](#0027)
 - `0.0.26` Releases - [0.0.26](#0026)
@@ -25,6 +26,11 @@ All notable changes to this project will be documented in this file.
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
 
+## [0.0.29]
+Released on 2020-05-23
+
+#### Added
+- `Date` extension properties: startOfDay, endOfDay, startOfMonth and endOfMonth
 
 ## [0.0.28]
 Released on 2020-05-22
