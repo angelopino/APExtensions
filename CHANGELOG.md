@@ -2,7 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
-- `0.0.30` Releases - [0.0.30](#0030)
+- `0.0.31` Releases - [0.0.31](#0031)
 - `0.0.29` Releases - [0.0.29](#0029)
 - `0.0.28` Releases - [0.0.28](#0028)
 - `0.0.27` Releases - [0.0.27](#0027)
@@ -27,7 +27,7 @@ All notable changes to this project will be documented in this file.
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
 
-## [0.0.30]
+## [0.0.31]
 Released on 2020-05-26
 
 #### Added

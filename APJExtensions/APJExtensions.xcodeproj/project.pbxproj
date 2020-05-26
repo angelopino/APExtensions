@@ -27,7 +27,7 @@
 		393B823F24782AC4009CC36C /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393B823B24780D19009CC36C /* UserDefault.swift */; };
 		395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
 		395EE87621B4A496007D6885 /* UIWindow+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395EE87421B4A496007D6885 /* UIWindow+extension.swift */; };
-		3962BD0D247D51510036A3CB /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962BD0C247D51510036A3CB /* Color+extension.swift */; };
+		3962BD0F247D53D20036A3CB /* Color+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3962BD0E247D53D10036A3CB /* Color+extension.swift */; };
 		3985C66522F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
 		3985C66622F4D39700B66286 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985C66422F4D39700B66286 /* UIColor+extension.swift */; };
 		39A7C7F920029D0E00FDD262 /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */; };
@@ -86,7 +86,7 @@
 		393B823B24780D19009CC36C /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefault.swift; path = ../Source/UserDefault.swift; sourceTree = "<group>"; };
 		393B823D24780D7E009CC36C /* UserDefaultTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefaultTest.swift; path = ../Tests/UserDefaultTest.swift; sourceTree = "<group>"; };
 		395EE87421B4A496007D6885 /* UIWindow+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIWindow+extension.swift"; path = "../Source/UIWindow+extension.swift"; sourceTree = "<group>"; };
-		3962BD0C247D51510036A3CB /* Color+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+extension.swift"; sourceTree = "<group>"; };
+		3962BD0E247D53D10036A3CB /* Color+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Color+extension.swift"; path = "../Source/Color+extension.swift"; sourceTree = "<group>"; };
 		397F0AF0244686BB005B036F /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		397F0AF1244686BB005B036F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3985C66422F4D39700B66286 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "../Source/UIColor+extension.swift"; sourceTree = "<group>"; };
@@ -220,6 +220,7 @@
 		39B1CF6F1F2F379D007D5A1D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3962BD0E247D53D10036A3CB /* Color+extension.swift */,
 				390595A52450FC3D00402070 /* Double+Extension.swift */,
 				39C2992F2292C72300114A79 /* Data+extension.swift */,
 				39A7C7F820029D0E00FDD262 /* UIViewController+extension.swift */,
@@ -234,7 +235,6 @@
 				395EE87421B4A496007D6885 /* UIWindow+extension.swift */,
 				3985C66422F4D39700B66286 /* UIColor+extension.swift */,
 				393B823B24780D19009CC36C /* UserDefault.swift */,
-				3962BD0C247D51510036A3CB /* Color+extension.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 				3925E5961F3868F2008C7885 /* Array+extension.swift in Sources */,
 				393217841F30D4B70015C8E4 /* UIView+extension.swift in Sources */,
 				39B1CF771F2F381D007D5A1D /* Int+extension.swift in Sources */,
-				3962BD0D247D51510036A3CB /* Color+extension.swift in Sources */,
+				3962BD0F247D53D20036A3CB /* Color+extension.swift in Sources */,
 				395EE87521B4A496007D6885 /* UIWindow+extension.swift in Sources */,
 				39C299302292C72300114A79 /* Data+extension.swift in Sources */,
 				39A7C8082002B77F00FDD262 /* UITableView+extension.swift in Sources */,
