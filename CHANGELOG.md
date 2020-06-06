@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.33` Releases - [0.0.33](#0033)
 - `0.0.32` Releases - [0.0.32](#0032)
 - `0.0.29` Releases - [0.0.29](#0029)
 - `0.0.28` Releases - [0.0.28](#0028)
@@ -26,6 +27,13 @@ All notable changes to this project will be documented in this file.
 - `0.0.3` Releases - [0.0.3](#003)
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
+
+
+## [0.0.33]
+Released on 2020-06-06
+
+#### Added
+- `Date` extension properties/method: isToday, adding date component
 
 ## [0.0.32]
 Released on 2020-05-26

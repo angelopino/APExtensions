@@ -69,4 +69,12 @@ class DateExtensionTest: XCTestCase {
         XCTAssertFalse(date.isEqual(to: dateToEqual, toGranularity: [.day, .year]))
     }
     
+    func testIsToday() {
+        let todayDate = Date(),
+        wrongTodayDate = Calendar.current.date(byAdding: .day, value: 5, to: todayDate)
+        print("\(todayDate.toString("dd/MM/yyyy")) - \(wrongTodayDate!.toString("dd/MM/yyyy"))")
+        XCTAssertTrue(todayDate.isToday)
+        XCTAssertFalse(wrongTodayDate!.isToday)
+    }
+    
 }

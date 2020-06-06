@@ -10,6 +10,11 @@ import UIKit
 
 public extension Date {
     
+    var isToday: Bool {
+        let todayDate = Date()
+        return isEqual(to: todayDate, toGranularity: [.day, .month, .year])
+    }
+    
     var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
     }
@@ -48,6 +53,10 @@ public extension Date {
     
     func isEqual(to date: Date, toGranularity components: [Calendar.Component], in calendar: Calendar = .current) -> Bool {
         return !components.contains { !calendar.isDate(self, equalTo: date, toGranularity: $0) }
+    }
+    
+    func adding(_ component: Calendar.Component, value: Int) -> Date {
+        return Calendar.current.date(byAdding: component, value: value, to: self) ?? self
     }
     
 }
