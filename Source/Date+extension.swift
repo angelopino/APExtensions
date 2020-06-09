@@ -15,6 +15,16 @@ public extension Date {
         return isEqual(to: todayDate, toGranularity: [.day, .month, .year])
     }
     
+    var isEarlierThanToday: Bool {
+        let diffDays = self.diffDays(from: Date())
+        return diffDays < 0
+    }
+    
+    var isAfterThanToday: Bool {
+        let diffDays = Calendar.current.dateComponents([.day], from: Date(), to: self).day ?? 0
+        return diffDays > 0
+    }
+    
     var startOfDay: Date {
         return Calendar.current.startOfDay(for: self)
     }
@@ -57,6 +67,11 @@ public extension Date {
     
     func adding(_ component: Calendar.Component, value: Int) -> Date {
         return Calendar.current.date(byAdding: component, value: value, to: self) ?? self
+    }
+    
+    func diffDays(from date: Date) -> Int {
+        let diffDays = Calendar.current.dateComponents([.day], from: date, to: self).day ?? 0
+        return diffDays
     }
     
 }

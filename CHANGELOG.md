@@ -2,6 +2,7 @@
 All notable changes to this project will be documented in this file.
 
 #### 0.0.x Releases
+- `0.0.35` Releases - [0.0.35](#0035)
 - `0.0.34` Releases - [0.0.34](#0034)
 - `0.0.32` Releases - [0.0.32](#0032)
 - `0.0.29` Releases - [0.0.29](#0029)
@@ -28,6 +29,11 @@ All notable changes to this project will be documented in this file.
 - `0.0.2` Releases - [0.0.2](#002)
 - `0.0.1` Releases - [0.0.1](#001)
 
+## [0.0.35]
+Released on 2020-06-06
+
+#### Added
+- `Date` extension properties: isEarlierThanToday
 
 ## [0.0.34]
 Released on 2020-06-06
